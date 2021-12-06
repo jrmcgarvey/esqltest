@@ -1,0 +1,5 @@
+<div><strong><%= comment.name %></strong> says: <%= comment.content %></div>
+<div class="comment-admin">
+<%= link_to "Edit", edit_post_comment_path(@post, comment) %>
+<%= link_to "Delete", [@post, comment], method: :delete %>
+</div>
